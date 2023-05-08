@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Senai UI</title>
+</head>
+<body>
+    <overflow style="display: none;" onclick="overflowToggle()">
+        <div class="chooser">
+            <div class="animate-hover" onclick="moveTo(0)">
+                History
+            </div>
+            <div class="animate-hover" onclick="moveTo(1)">
+                Diary
+            </div>
+            <div class="animate-hover" onclick="moveTo(2)">
+                Diet
+            </div>
+            <div class="animate-hover" onclick="moveTo(3)">
+                Friends
+            </div>
+        </div>
+    </overflow>
+    <card style="display: none;" onclick="cardToggle(event)">
+        <div class="container">
+            <div class="header">
+                <div class="image">
+                    <img src="media\pie.png" alt="pie">
+                </div>
+                <div class="title">
+                    <div>
+                        Title
+                    </div>
+                    <div>
+                        Subtitle
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <img src="media\graficos\112109-Pie-chart.jpg" alt="chart">
+            </div>
+            <div class="main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+            <div class="footer">
+                <div>
+                    Action 1
+                </div>
+                <div>
+                    Action 2
+                </div>
+                <div style="cursor: default;"></div>
+                <div>
+                    &lt;3
+                </div>
+                <div>
+                    \/
+                </div>
+            </div>
+        </div>
+    </card>
+    <nav style="right: 100vw;">
+        <div class="animate-hover" onclick="moveTo(0); navOpener()">
+            History
+        </div>
+        <div class="animate-hover" onclick="moveTo(1); navOpener()">
+            Diary
+        </div>
+        <div class="animate-hover" onclick="moveTo(2); navOpener()">
+            Diet
+        </div>
+        <div class="animate-hover" onclick="moveTo(3); navOpener()">
+            Friends
+        </div>
+    </nav>
+    <header>
+        <div class="animate-hover" onclick="navOpener()">
+            =
+        </div>
+        <h1>
+            History
+        </h1>
+        <div class="animate-hover">
+            &lt;3
+        </div>
+        <div class="animate-hover">
+            o-
+        </div>
+        <div class="animate-hover" onclick="overflowToggle()">
+            ...
+        </div>
+    </header>
+    <main style="right: 0vw;">
+        <history>
+            <div class="avatar">
+                <img src="media\avatar\avatar.jpg" alt="avatar">
+            </div>
+            <div class="headers">
+                <div class="row">
+                    <div>
+                        Date
+                    </div>
+                    <div>
+                        Weight
+                    </div>
+                    <div>
+                        Height
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="row">
+                    <div>
+                        01/01/2020
+                    </div>
+                    <div>
+                        115 kg
+                    </div>
+                    <div>
+                        1.78 m
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        02/02/2020
+                    </div>
+                    <div>
+                        110 kg
+                    </div>
+                    <div>
+                        1.78 m
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        03/03/2020
+                    </div>
+                    <div>
+                        105 kg
+                    </div>
+                    <div>
+                        1.78 m
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        04/04/2020
+                    </div>
+                    <div>
+                        90 kg
+                    </div>
+                    <div>
+                        1.78 m
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        05/05/2020
+                    </div>
+                    <div>
+                        85 kg
+                    </div>
+                    <div>
+                        1.78 m
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        06/06/2020
+                    </div>
+                    <div>
+                        83 kg
+                    </div>
+                    <div>
+                        1.78 m
+                    </div>
+                </div>
+            </div>
+        </history>
+        <diary>
+            <div class="date">
+                07/07/2020
+            </div>
+            <div class="calorie">
+                <div>
+                    40% Prote�nas<br>
+                    12% Carboidrato<br>
+                    32% Fibra<br>
+                    16% Gordura<br>
+                </div>
+                <img src="media\pie.png" alt="pie chart">
+            </div>
+            <div class="recommendations">
+                Daily Recommendations
+            </div>
+            <div class="image">
+                Caloria<br>
+                Prote�nas<br>
+                Carboidrato<br>
+                A�ucar<br>
+                Fibra<br>
+                Gordura<br>
+                S�dio<br>
+                C�lcio<br>
+                Ferro<br>
+                <!-- <img src="media\piramedealimentar\5320.jpg" alt="pyramid"> -->
+            </div>
+        </diary>
+        <diet>
+            <div class="header">
+                <div>
+                    Title
+                </div>
+                <div style="border-right: solid var(--text-color) 0.1rem;">
+                    kcal/day
+                </div>
+                <div>
+                    water
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        Title
+                    </div>
+                    <div>
+                        420 kcal
+                    </div>
+                    <div>
+                        200ml
+                    </div>
+                </li>
+            </ul>
+            <div class="images">
+                <div>
+                    <img src="media\piramedealimentar\5320.jpg" alt="pyramid">
+                </div>
+                <div>
+                    <img src="media\pie.png" alt="pie chart">
+                </div>
+            </div>
+            <div class="plus" onclick="addItem()">
+                +
+            </div>
+        </diet>
+        <friends>
+            <div class="header">
+                <div>
+                    <img src="media\avatar\avatar.jpg" alt="avatar">
+                </div>
+                <div>
+                    Nickname
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        Caf� da manh�
+                    </div>
+                    <div style="color: red">
+                        104 kg
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Lanche da Manh�
+                    </div>
+                    <div style="color: green">
+                        94 kg
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Almo�o
+                    </div>
+                    <div style="color: red">
+                        114 kg
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Lanche da Tarde
+                    </div>
+                    <div style="color: green">
+                        107 kg
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Jantar
+                    </div style="color: green">
+                    <div style="color: green">
+                        96 kg
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Ceia
+                    </div>
+                    <div style="color: green">
+                        85 kg
+                    </div>
+                </li>
+            </ul>
+        </friends>
+    </main>
+    <footer>
+        <script src="main.js" defer async></script>
+        <div id="picker_bottom">
+            <left style="width: 0vw;"></left>
+            <middle></middle>
+        </div>
+        <div class="animate-hover" onclick="moveTo(0)">
+            History
+        </div>
+        <div class="animate-hover" onclick="moveTo(1)">
+            Diary
+        </div>
+        <div class="animate-hover" onclick="moveTo(2)">
+            Diet
+        </div>
+        <div class="animate-hover" onclick="moveTo(3)">
+            Friends
+        </div>
+    </footer>
+    <background style="left: -20vw;">
+        <img src="media\piramedealimentar\052.png" alt="background">
+    </background>
+</body>
+</html>
